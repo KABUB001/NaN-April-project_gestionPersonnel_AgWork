@@ -47,7 +47,7 @@ if(tach.style.checked){
 //Ecoute d'evenement sur le formulaire1
     form1?.addEventListener("submit", (e)=>{
         e.preventDefault();
-            const worker = new module.Worker(names,age,tel,image="Farmer-Agriculture-Transparent-PNG.png",role);
+            const worker = new module.Worker(names,age,tel,image,role);
             worker.addWorker();
             worker.showWorker()
           

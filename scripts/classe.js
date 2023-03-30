@@ -76,6 +76,9 @@ class Worker {
             const tableWorker = this.getWorker();
 
         }
+        verifWork(){
+            
+        }
         changeWorkName(){}
         statWorkerChange(){}
         checkWorkerName(){}
