@@ -76,8 +76,11 @@ class Worker {
             const tableWorker = this.getWorker();
 
         }
-        verifWork(){
-            
+        verifWork(worker){
+            const tableWorker = this.getWorker();
+            tableWorker.filter(el => {el.tel 
+                
+            });
         }
         changeWorkName(){}
         statWorkerChange(){}
