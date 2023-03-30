@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/parametre.css">
+    <title>Parametre</title>
+</head>
+<body>
+    <dialog>
+        <form id="formSupAdmin">
+            <div>
+                <label for="password">Saisir Mot de passe</label>
+                <input type="password" id="suppassword" required>
+            </div>
+            <div>
+                <label for="password">Ressaisir Mot de passe</label>
+                <input type="password" id="suprpassword" required>
+            </div>
+            
+                
+            <menu>
+                <button value="cancel" type="reset">Annuler</button>
+                <button id="confirmBtn" type="submit">Confirmer</button>
+            </menu>
+            <p id="message"></p>
+        </form>
+
+       
+    </dialog>
+    <div class="parametres">
+        <div class="parametre">
+            <form class="form1">
+                <div>
+                    <label for="tache">Taches max/jour</label>
+                    <input type="number" id="tache">
+                </div>
+            
+                <div>
+                    <label for="sommeIndiv">Somme individuelle max/jour</label>
+                    <input type="number" id="sommeIndiv">
+                </div>
+            
+                <div>
+                    <label for="sommeTotale">Somme Totale max/jour</label>
+                    <input type="number" id="sommeTotale">
+                </div>
+                <div>
+                    <button type="submit" id="enregistrer">Enregistrer</button>
+                </div>
+            
+            </form>
+      
+        </div>
+        <div class="rigth">
+            <div>
+                <button class="" style="color:blue">Admin</button>
+            </div>
+            <div>
+                <button id="modifierAcces" style="background-color: yellow;">Modifier mon accès</button>
+            </div>
+            <div>
+                <button class=""></button>
+            </div>
+        </div>
+        <p></p>
+        <div class="G-form">
+            <form class="formAdmin">
+                <div>
+                    <label for="admin">Nom d'utilisateur</label>
+                    <input type="text" id="admin" required>
+                </div>
+                <div>
+                    <label for="password">Mot de pass</label>
+                    <input type="password" id="password" required>
+                </div>
+                
+                    <button type="submit" id="submitAdmin">Enregistrer</button>
+               
+            </form>
+            <p class="title"></p>
+        </div>
+        <!-- <div class="showAdmin">
+            <div>
+                <img src="">
+                <span>Yves </span>
+                <input type="password">
+            </div>
+        </div> -->
+        <div class="table">
+            
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+    <script src="/scripts/admin.js"></script>
+</body>
+</html>

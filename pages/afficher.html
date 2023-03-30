@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/afficher.css">
+    <title>Taches et travailleurs</title>
+</head>
+<body>
+    <div>
+        <fieldset>
+            <legend>Afficher</legend>
+            <div class="radio-tache">
+                <input type="radio" id="tach" name="forme" value="Taches" checked>
+                <label for="tache"><iconify-icon icon="fluent-mdl2:task-solid"></iconify-icon></label>
+            </div>
+    
+            <div class="radio-travailleur">
+                <input type="radio" id="trvailleur" name="forme" value="Travailleurs">
+                <label for="travailleur"><iconify-icon icon="mdi:helmet" style="margin-left: 3px;"></iconify-icon></label>
+            </div>
+        </fieldset>
+
+        <div id="travailleur">
+            <table>
+            
+                <tbody>
+                    <tr>
+                        <td ></td>
+                        <td>BERNARD DADIE</td>
+                        <td>TACHES</td>
+                        <td>NON DEBUTES</td>
+                        <td>EN COURS</td>
+                        <td>TERMINES</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><img src="/images/1456690-mark-zuckerberg-pdg-de-facebook-le-23-octobre-2019-devant-le-congres.jpeg" weight="60" height="60" style="border-radius: 100%;"alt="" ></td>
+                        <td>ID</td>
+                        <td>10</td>
+                        <td style="background-color: #F1DD38;">5</td>
+                        <td style="background-color: #E2F611;">3</td>
+                        <td style="background-color: #008000;">2</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>0778827674</td>
+                        <td>10</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="tache">
+            <table>
+            
+                <tbody>
+                    <tr>
+                       
+                    </tr>
+                    <tr>
+                        <td>ID</td>
+                        <td><img src="/images/2116616_w2121h1590c1cx1061cy707cxt0cyt0cxb2121cyb1414.jpeg" weight="60" height="60" style="border-radius: 100%;"alt="" ></td>
+                        <td>Cabosser 2tonnes de cacao</td>
+                        <td >2000 FCFA</td>
+                        <td >
+                            <select id="monselect">
+                                <option value="pas attribué" selected>pas attribué<iconify-icon icon="carbon:dot-mark" style="color: #f1dd38;"></iconify-icon></option>
+                                <option value="en cours">en cours<iconify-icon icon="carbon:dot-mark" style="color: #E2F611;"></iconify-icon></option>
+                                <option value="terminé">terminé<iconify-icon icon="carbon:dot-mark" style="color: #008000;"></iconify-icon></option>
+                            </select>
+                        </td>
+                        <td >
+                            <iconify-icon icon="bi:trash-fill" style="color: red;"></iconify-icon>
+                        </td>
+                        <td></td>
+                    </tr>
+                   
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+    <script type="module" src="/scripts/afficher.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/ajout.css">
+    <title>Ajout</title>
+</head>
+<body><header>
+    <nav>
+        <img src="/images/4397087286070f6df0ef619.24880858-profile-3353.jpeg">
+        <ul>
+            <a href="#"><li><iconify-icon icon="material-symbols:home"></iconify-icon></li></a>
+            <a href="#"><li><iconify-icon icon="mdi:account-hard-hat"></iconify-icon></li></a>
+            <a href="#"><li><iconify-icon icon="ri:money-dollar-circle-fill"></iconify-icon></li></a>
+            <a href="#"><li><iconify-icon icon="gridicons:stats"></iconify-icon></li></a>
+            <a href="/pages/parametre.html"><li><iconify-icon icon="uiw:setting"></iconify-icon></li></a>
+        </ul>
+
+    </nav>
+    
+</header>
+<div class="header">
+    <iconify-icon icon="material-symbols:power-settings-new"></iconify-icon>
+    <iconify-icon icon="mdi:user-online"></iconify-icon>
+</div>
+<section>
+
+    <fieldset>
+        <legend>Ajouter</legend>
+        <div class="radio-tache">
+            <input type="radio" id="tache" name="forme" value  = "Taches" checked>
+            <label for="tache">Taches</label>
+        </div>
+
+        <div class="radio-travailleur">
+            <input type="radio" id="travailleur" name="forme" value  = "Travailleurs">
+            <label for="travailleur">Travailleurs</label>
+        </div>
+    </fieldset>
+                            <!-- FORM1 -->
+    <form class="form1">
+        <div>
+            <label for="name">Nom et Prenoms</label>
+            <input type="text" id="name">
+        </div>
+        <div>
+            <label for="age">Age</label>
+            <input type="number" id="age">
+        </div>
+        <div>
+            <label for="phone">Téléphone</label>
+            <input type="tel" id="phone" pattern="[0-9]{10}" required>
+        </div>
+    
+        <div>
+            <label for="sang">Groupe sanguin</label>
+            <input type="text" id="sang">
+        </div>
+        <div>
+            <label for="role">Role</label>
+            <input type="text" id="role">
+        </div>
+        <div>
+            <label for="fichier"></label>
+            <input type="file" id="fichier">
+        </div>
+        <div>
+           <button type="submit">Enregistrer</button>
+        </div>
+    </form>
+
+
+
+                            <!-- FORM2 -->
+    <form class="form2">
+        <div>
+            <label for="name">Nom de tache</label>
+            <input type="text" id="name2">
+        </div>
+        <div>
+            <label for="montant">Montant Alloué</label>
+            <input type="number" id="montant">
+        </div>
+        
+    
+        
+        
+        <div>
+           <button type="submit">Ajouter</button>
+        </div>
+    </form>
+    </form>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+
+    <script src="/scripts/ajout.js"> </script>
+</body>
+</html>

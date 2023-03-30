@@ -1,0 +1,97 @@
+.parametre{
+    height: 40rem;
+    width: 35rem;
+    border: 0.2rem solid black;
+    box-shadow: 0.5rem;  
+    float: left;
+}
+.form1{
+    width: 32rem;
+    height: 35rem;;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+input{
+    width: 12rem;
+    height: 2rem;
+    
+}
+.form1 button{
+    width: 5rem;
+    height: 2rem;
+    margin-top: 1rem;
+    margin-left: 45%
+}
+.rigth{
+    width: 15rem;
+    height: 15rem;
+    float: right;
+    display:flex;
+    background-color: black;
+    flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+}
+.rigth div{
+ width: 10rem;
+ height: 3rem;
+ background-color: grey;
+}
+
+.formAdmin{
+    clear:both;
+}
+.title{
+    clear: both;
+}
+
+.formAdmin {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5rem;
+   
+}
+.formAdmin button{
+    margin-left:1rem;
+}
+.formAdmin div{
+    margin-left:5rem;
+}
+
+.showAdmin{
+    width: 100vw;
+    height: 20vh;
+    display: grid;
+    grid-template-columns: 33% 34% 33% ;
+    grid-template-rows: repeat(auto-fill,min(20rem))
+}
+tr{
+    
+    /* background-color: whitesmoke; */
+    border: 1px solid red;
+}
+table{
+    border: 1.5px solid black;
+    width: 45rem;
+    height: 5.3rem;
+    box-shadow: 1px;
+    margin: 1.5rem;
+    
+}
+.table{
+    margin-top: 3rem;
+    text-align: center;
+}
+tr input{
+    border:hidden;
+    pointer-events: none;
+    width: 8rem;
+    
+}
+tr iconify-icon{
+ cursor: pointer;
+}

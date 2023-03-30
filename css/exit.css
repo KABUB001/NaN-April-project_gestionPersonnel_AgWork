@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+   
+}
+
+ .container-m{
+    width:35.13rem;
+    height:60rem;
+    border: 1px solid black;
+    margin-top: 8%;
+}
+.container-l{
+    width: 100vw;
+    height:90vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}/*
+
+
+
+
+.img img{
+   width: 3rem;
+   height: 3rem;
+   padding-top: rem;
+}
+i{
+    margin-top: 2rem;
+} */
+.liens{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 40rem;
+    margin-left: 28%;
+    
+    
+   
+   
+}
+.igmLink{
+    display: block;
+    width: 50rem;
+    height: 7rem;
+
+}
+.igmLink img{
+    width: 3rem;
+    height:3rem;
+    
+}
+img{
+    width: 12rem;
+    height: 12rem;
+}
+.imageList{
+    width: 50rem;
+    height: 50rem;
+    display: block;
+    justify-content: center;
+}
+.div-bas{
+    width:auto;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    margin-left:8rem;
+    
+}
+
+.quit{
+    height:10rem;
+    width: 20rem;
+    background-color: antiquewhite;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+}
+.quit p{
+    margin-top:4rem;
+    width:auto;
+}
+.quit {
+    text-align:center;
+}
+.boutton{
+    margin-top: 4rem;
+    width: 20rem;
+    height:2rem;
+    text-align:center;
+    
+}
+.boutton1{
+    margin-right: 1rem
+}
+.boutton2{
+    margin-left: 10rem
+}

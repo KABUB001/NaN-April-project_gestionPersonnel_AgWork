@@ -1,0 +1,38 @@
+tr{
+    background-color: white;
+   
+}
+td,tr{
+    padding: 1px
+}
+#tache{
+    text-align: center;
+     
+}
+#travailleur{
+    text-align: center;
+    display: none;
+}
+table{
+    font-size: 0.9rem;
+    border: 1px solid black;
+    width: 80%;
+    margin-left: 10%;
+}
+
+
+fieldset{
+    width: 7rem;
+    height: 3.8rem;
+    padding-bottom: 2rem;
+
+}
+fieldset{
+    width: 7rem;
+    height: 3.8rem;
+    padding-bottom: 2rem;
+
+}
+fieldset div{
+    margin-top: 0.5rem;
+}
