@@ -5,13 +5,13 @@
 
  .container-m{
     width:35.13rem;
-    height:60rem;
+    height:100%;
     border: 1px solid black;
     margin-top: 8%;
 }
 .container-l{
     width: 100vw;
-    height:90vh;
+    height:60rem;
     display:flex;
     justify-content: center;
     align-items: center;
