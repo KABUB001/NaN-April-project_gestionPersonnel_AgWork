@@ -1,3 +1,7 @@
+import * as module from './classe.js';
+
+module.task
+
 const tach = document.querySelector("#tache");
 const trav = document.querySelector("#travailleur");
 const form1 = document.querySelector(".form1");
@@ -36,105 +40,26 @@ if(tach.style.checked){
 }
 
 
-////CLASSE DES TACHES
-    class Task {
-        constructor(taskName, montant){
-            this.name = taskName.value;
-            this.montant =  montant.valule;
-            this.date = new Date().toLocaleDateString();
-            this.id = "";
 
-        }
-
-        getTask(){
-            if(localStorage.getItem("task")){
-                return JSON.parse(localStorage.getItem("task"))
-             }
-             else return []
-        }
-        addTask(){
-        const tableTask = this.getTask();
-        const iD = "TSK" + (tableTask.length + 101);
-        this.id = iD;
-        tableTask.push(this);
-        localStorage.setItem("task",JSON.stringify(tableTask))
-        }
-        showTask(){
-            const tableTask = this.getTask();
-        }
-        deleteTask(){}
-        statTaskChange(){}
-
-    }
- 
-
-
-
-
-
-
-
-
- ////CLASS DES TRAVAILLEURS
-let worker
-export default worker=class Worker {
-    
-         constructor(names,age,tel,image,role){
-            this.name = names.value;
-            this.age = age.value;
-            this.tel = tel.value;
-            this.image = image.value;
-            this.role = role.value;
-            this.statut = "Pas attribé";
-            this.id = this.getWorker().indexOf(this);
-            this.date = new Date().toLocaleTimeString()
-
-        }
-        getWorker(){
-            if(localStorage.getItem("worker")){
-                return JSON.parse(localStorage.getItem("worker"))
-             }
-             else return []
-        }
-        addWorker(){
-            const tableWorker = this.getWorker();
-            const iD = "WRK" + (tableWorker.length + 101);
-            this.id = iD;
-            console.log(iD)
-
-            tableWorker.push(this);
-            localStorage.setItem("worker",JSON.stringify(tableWorker))
-        }
-            
-        showWorker(){
-            const tableWorker = this.getWorker();
-        }
-            deleteWorker(){
-                const tableWorker = this.getWorker();
-
-            }
-            changeWorkName(){}
-            statWorkerChange(){}
-            checkWorkerName(){}
-    }
 
 
 
 //Ecoute d'evenement sur le formulaire1
     form1?.addEventListener("submit", (e)=>{
         e.preventDefault();
-            const worker = new Worker(names,age,tel,image,role);
+            const worker = new module.Worker(names,age,tel,image="Farmer-Agriculture-Transparent-PNG.png",role);
             worker.addWorker();
             worker.showWorker()
           
         })
 
-
+        
 
 //Ecoute d'evenement sur le formulaire2
 form2?.addEventListener("submit", (e)=>{
     e.preventDefault();
-        const task = new Task(taskName, montant);
+    console.log(module)
+        const task = new module.Task(taskName, montant);
         task.addTask();
         task.showTask()
       
