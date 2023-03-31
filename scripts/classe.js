@@ -71,6 +71,24 @@ class Worker {
         
     showWorker(){
         const tableWorker = this.getWorker();
+        table.innerHTML="";
+            tableWorker.forEach(el => {
+                let color = (el.statut == "lock-open")?"green":"#E2F611";
+                let clas = (el.statut == "lock-open")?"lock":"lock,lock-open" 
+                table.innerHTML += `<table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><iconify-icon icon="mdi:user" width="50" height="50"></iconify-icon></td>
+                    <td>${el.username}</td>
+                    <td><input type="password" value="${el.password}"></td>
+                    <td class=${clas}><iconify-icon  icon="material-symbols:${el.statut}" style="color: ${color};" width="26" height="26"></iconify-icon></td>
+                    <td class="delete"><iconify-icon  icon="mdi:trash" style="color: red;" width="30" height="30"></iconify-icon></td>
+                </tr>
+            </tbody>
+        </table>`
+            });
     }
         deleteWorker(){
             const tableWorker = this.getWorker();

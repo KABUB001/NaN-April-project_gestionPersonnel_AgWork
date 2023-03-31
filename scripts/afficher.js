@@ -1,3 +1,5 @@
+import * as Class from './classe.js'
+console.log(Class);
 const tach = document.getElementById("tach");
 const trav = document.getElementById("travailleur");
 const tache = document.getElementById("tache");
@@ -14,3 +16,5 @@ window.addEventListener('change',()=>{
         trav.style.display = "block";
     }
 })
+
+
