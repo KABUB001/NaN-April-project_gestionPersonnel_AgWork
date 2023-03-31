@@ -38,7 +38,7 @@ form.addEventListener("submit",(e)=>{
             }
             else{
                 console.log("bien connecté");
-                let session = JSON.parse(localStorage.getItem("session"))?localStorage.getItem("session"):[];
+                let session = JSON.parse(localStorage.getItem("session"))?[]:[];
                 session.push(username);
                 localStorage.setItem("session",JSON.stringify(session))
                 window.location.href = "../pages/accueil.html";
