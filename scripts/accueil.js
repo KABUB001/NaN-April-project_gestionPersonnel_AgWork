@@ -16,4 +16,8 @@ function getTable(nom){
 
 const tableAdmins = getTable("admins");
 const tableWorker = getTable("worker");
-travailleur.textContent = "hello" 
+travailleur.textContent = tableAdmins.length;
+travailleur.style.textAlign = "center";
+
+
+admin.textContent = tableWorker.length
