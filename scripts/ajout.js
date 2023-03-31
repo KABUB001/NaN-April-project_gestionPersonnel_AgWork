@@ -10,17 +10,19 @@ const da = new Date();
 da.toLocaleDateString()
 console.log(da)
 //Worker Information
-const names = document.getElementById("name").value;
-const age = document.getElementById("age").value;
-const tel = document.getElementById("phone").value;
-const image = document.getElementById('fichier').value;
-const role = document.getElementById("role").value;
+const names = document.getElementById("name");
+const age = document.getElementById("age");
+const tel = document.getElementById("phone");
+const image = document.getElementById('fichier');
+const role = document.getElementById("role");
+console.log(names,age)
 let id = "";
 
 
+
 //Task Information
-const taskName = document.getElementById('name2').value;
-const montant = document.getElementById("montant").value;
+const taskName = document.getElementById('name2')
+const montant = document.getElementById("montant");
 
 
 /////Swicther entre les différents formulaires
@@ -42,14 +44,16 @@ if(tach.style.checked){
 
 
 
-
+console.log(names,age,tel,image,role)
 
 //Ecoute d'evenement sur le formulaire1
     form1?.addEventListener("submit", (e)=>{
         e.preventDefault();
             const worker = new module.Worker(names,age,tel,image,role);
+            console.log("1",names,age,tel,image,role)
             worker.addWorker();
-            worker.showWorker()
+            worker.showWorker(trav);
+            
           
         })
 
@@ -59,8 +63,11 @@ if(tach.style.checked){
 form2?.addEventListener("submit", (e)=>{
     e.preventDefault();
     console.log(module)
+    
         const task = new module.Task(taskName, montant);
+        console.log("2",taskName, montant)
         task.addTask();
-        task.showTask()
+        task.showTask();
+        alert("hey2")
       
     })

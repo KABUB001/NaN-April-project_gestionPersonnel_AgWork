@@ -2,8 +2,8 @@
 
 class Task {
     constructor(taskName, montant){
-        this.name = taskName;
-        this.montant =  montant;
+        this.name = taskName.value;
+        this.montant =  montant.value;
         this.date = new Date().toLocaleDateString();
         this.id = "";
 
@@ -22,22 +22,22 @@ class Task {
     tableTask.push(this);
     localStorage.setItem("task",JSON.stringify(tableTask))
     }
-    showTask(table){
+    showTask(){
         const tableTask = this.getTask();
-        table.innerHTML="";
+        tache.innerHTML="";
         tableTask.forEach(el => {
             let color = (el.statut == "lock-open")?"green":"#E2F611";
             let clas = (el.statut == "lock-open")?"lock":"lock,lock-open" 
-            table.innerHTML += `<table>
+            tache.innerHTML += `<table>
         
             <tbody>
                 <tr>
                    
                 </tr>
                 <tr>
-                    <td>ID</td>
+                    <td>${el.id}</td>
                     <td><img src="/images/2116616_w2121h1590c1cx1061cy707cxt0cyt0cxb2121cyb1414.jpeg" weight="60" height="60" style="border-radius: 100%;"alt="" ></td>
-                    <td>Cabosser 2tonnes de cacao</td>
+                    <td>${el.taskName}</td>
                     <td >2000 FCFA</td>
                     <td >
                         <select id="monselect">
@@ -74,11 +74,11 @@ export {Task}
 class Worker {
 
      constructor(names,age,tel,image,role){
-        this.name = names;
-        this.age = age;
-        this.tel = tel;
-        this.image = image;
-        this.role = role;
+        this.name = names.value;
+        this.age = age.value;
+        this.tel = tel.value;
+        this.image = image.value;
+        this.role = role.value;
         this.statut = "Pas attribé";
         this.id = this.getWorker().indexOf(this);
         this.date = new Date().toLocaleTimeString()
@@ -100,13 +100,13 @@ class Worker {
         localStorage.setItem("worker",JSON.stringify(tableWorker))
     }
         
-    showWorker(table){
+    showWorker(tab){
         const tableWorker = this.getWorker();
-        table.innerHTML="";
+        tab.innerHTML="";
             tableWorker.forEach(el => {
                 let color = (el.statut == "lock-open")?"green":"#E2F611";
                 let clas = (el.statut == "lock-open")?"lock":"lock,lock-open" 
-                table.innerHTML += ` <table>
+                tab.innerHTML += ` <table>
             
                 <tbody>
                     <tr>
