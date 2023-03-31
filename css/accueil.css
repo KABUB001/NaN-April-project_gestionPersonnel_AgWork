@@ -56,3 +56,44 @@ section{
     overflow-y: scroll;
     scroll-behavior: smooth;
 }
+.first_col{
+    display:flex;
+    justify-content:space-around;
+}
+p{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.first_col div{
+    width: 17rem;
+    height: 3.9rem;
+}
+
+.non-debute{
+    background-color:#F1DD38;
+    
+}
+.en-cours{
+    background-color:#E2F611
+}
+.termine{
+    background-color:#008000
+}
+
+.second_col{
+    margin-top: 10rem;
+    display: flex;
+    justify-content:space-around;
+}
+.second_col div{
+    width: 20rem;
+    height: 8rem;
+    
+}
+.admin{
+    background-color: #ff00009d;
+}
+.left{
+    background-color: rgba(128, 128, 128, 0.615);
+}
