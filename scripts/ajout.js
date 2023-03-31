@@ -1,6 +1,6 @@
 import * as module from './classe.js';
 
-module.task
+
 
 const tach = document.querySelector("#tache");
 const trav = document.querySelector("#travailleur");
