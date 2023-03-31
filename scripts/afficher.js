@@ -1,6 +1,6 @@
 import * as Class from './classe.js'
-const worker = new Class.Task;
-
+const worker = new Class.Worker();
+const task = new Class.Task()
 const tach = document.getElementById("tach");
 const trav = document.getElementById("travailleur");
 const tache = document.getElementById("tache");
@@ -18,4 +18,7 @@ window.addEventListener('change',()=>{
     }
 })
 
+
+worker.showWorker(trav);
+task.showTask(tache)
 

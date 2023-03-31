@@ -10,17 +10,17 @@ const da = new Date();
 da.toLocaleDateString()
 console.log(da)
 //Worker Information
-const names = document.getElementById("name");
-const age = document.getElementById("age");
-const tel = document.getElementById("phone");
-const image = document.getElementById('fichier');
-const role = document.getElementById("role");
+const names = document.getElementById("name").value;
+const age = document.getElementById("age").value;
+const tel = document.getElementById("phone").value;
+const image = document.getElementById('fichier').value;
+const role = document.getElementById("role").value;
 let id = "";
 
 
 //Task Information
-const taskName = document.getElementById('name2');
-const montant = document.getElementById("montant");
+const taskName = document.getElementById('name2').value;
+const montant = document.getElementById("montant").value;
 
 
 /////Swicther entre les différents formulaires
