@@ -1,0 +1,1 @@
+window.addEventListener("DOMContentLoaded",()=>{window.location.replace("../pages/accueil.html")})
