@@ -111,7 +111,7 @@ class Worker {
                 <tbody>
                     <tr>
                         <td ></td>
-                        <td>BERNARD DADIE</td>
+                        <td>${el.names}</td>
                         <td>TACHES</td>
                         <td>NON DEBUTES</td>
                         <td>EN COURS</td>
@@ -129,7 +129,7 @@ class Worker {
                     </tr>
                     <tr>
                         <td></td>
-                        <td>0778827674</td>
+                        <td>${el.tel}</td>
                         <td>10</td>
                         <td></td>
                         <td></td>
