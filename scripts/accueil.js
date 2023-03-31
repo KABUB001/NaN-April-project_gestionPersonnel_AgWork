@@ -1,6 +1,7 @@
 const travailleur = document.querySelector(".travailleur");
 const admin = document.querySelector(".admin");
 
+const session = JSON.parse(localStorage.getItem("session"));
 
 
 

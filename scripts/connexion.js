@@ -38,10 +38,11 @@ form.addEventListener("submit",(e)=>{
             }
             else{
                 console.log("bien connecté");
-                window.location.href = "../index.html";
-                let session = JSON.parse(localStorage.getItem("session"));
-                session = []
-
+                let session = JSON.parse(localStorage.getItem("session"))?localStorage.getItem("session"):[];
+                session.push(username);
+                localStorage.setItem("session",JSON.stringify(session))
+                window.location.href = "../pages/accueil.html";
+                
             }
         }
         else{

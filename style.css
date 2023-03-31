@@ -1,4 +1,19 @@
+header{
+    height: 109px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+}
+header div{
+background-color: #F1DD38;
+text-align: center;
+height: 74px;
+width: 150px;
 
+}
+header p{
+    
+}
 
 
 
