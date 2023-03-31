@@ -59,7 +59,7 @@ class Admin {
     }
     showAdmins(){
         table.innerHTML="";
-        const tableAdmins = this.getAdmins();
+        const tableAdmins = this.getAdmins().filter(el=>el.username != "admin");
         
             tableAdmins.forEach(el => {
                 let color = (el.statut == "lock-open")?"green":"#E2F611";

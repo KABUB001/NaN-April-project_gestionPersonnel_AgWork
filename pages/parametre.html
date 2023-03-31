@@ -8,90 +8,111 @@
     <title>Parametre</title>
 </head>
 <body>
-    <dialog>
-        <form id="formSupAdmin">
-            <div>
-                <label for="password">Saisir Mot de passe</label>
-                <input type="password" id="suppassword" required>
-            </div>
-            <div>
-                <label for="password">Ressaisir Mot de passe</label>
-                <input type="password" id="suprpassword" required>
-            </div>
-            
-                
-            <menu>
-                <button value="cancel" type="reset">Annuler</button>
-                <button id="confirmBtn" type="submit">Confirmer</button>
-            </menu>
-            <p id="message"></p>
-        </form>
+    <header>
+        <nav>
+            <img src="../images/4397087286070f6df0ef619.24880858-profile-3353.jpeg">
+            <ul>
+                <a href="./accueil.html"><li><iconify-icon icon="material-symbols:home"></iconify-icon></li></a>
+                <a href="./afficher.html"><li><iconify-icon icon="mdi:account-hard-hat"></iconify-icon></li></a>
+                <a href="#"><li><iconify-icon icon="ri:money-dollar-circle-fill"></iconify-icon></li></a>
+                <a href="./bilan.html"><li><iconify-icon icon="gridicons:stats"></iconify-icon></li></a>
+                <a href="./pages/parametre.html"><li><iconify-icon icon="uiw:setting"></iconify-icon></li></a>
+            </ul>
 
-       
-    </dialog>
-    <div class="parametres">
-        <div class="parametre">
-            <form class="form1">
+        </nav>
+        
+    </header>
+    <div class="header">
+        <a href="./pages/exit.html"><iconify-icon icon="material-symbols:power-settings-new"></iconify-icon></a>
+        <iconify-icon icon="mdi:user-online"></iconify-icon>
+    </div>
+    <section>
+        <dialog>
+            <form id="formSupAdmin">
                 <div>
-                    <label for="tache">Taches max/jour</label>
-                    <input type="number" id="tache">
-                </div>
-            
-                <div>
-                    <label for="sommeIndiv">Somme individuelle max/jour</label>
-                    <input type="number" id="sommeIndiv">
-                </div>
-            
-                <div>
-                    <label for="sommeTotale">Somme Totale max/jour</label>
-                    <input type="number" id="sommeTotale">
+                    <label for="password">Saisir Mot de passe</label>
+                    <input type="password" id="suppassword" required>
                 </div>
                 <div>
-                    <button type="submit" id="enregistrer">Enregistrer</button>
-                </div>
-            
-            </form>
-      
-        </div>
-        <div class="rigth">
-            <div>
-                <button class="" style="color:blue">Admin</button>
-            </div>
-            <div>
-                <button id="modifierAcces" style="background-color: yellow;">Modifier mon accès</button>
-            </div>
-            <div>
-                <button class=""></button>
-            </div>
-        </div>
-        <p></p>
-        <div class="G-form">
-            <form class="formAdmin">
-                <div>
-                    <label for="admin">Nom d'utilisateur</label>
-                    <input type="text" id="admin" required>
-                </div>
-                <div>
-                    <label for="password">Mot de pass</label>
-                    <input type="password" id="password" required>
+                    <label for="password">Ressaisir Mot de passe</label>
+                    <input type="password" id="suprpassword" required>
                 </div>
                 
-                    <button type="submit" id="submitAdmin">Enregistrer</button>
-               
+                    
+                <menu>
+                    <button value="cancel" type="reset">Annuler</button>
+                    <button id="confirmBtn" type="submit">Confirmer</button>
+                </menu>
+                <p id="message"></p>
             </form>
-            <p class="title"></p>
-        </div>
-        <!-- <div class="showAdmin">
-            <div>
-                <img src="">
-                <span>Yves </span>
-                <input type="password">
+    
+           
+        </dialog>
+        <div class="parametres">
+            <div class="parametre">
+                <form class="form1">
+                    <div>
+                        <label for="tache">Taches max/jour</label>
+                        <input type="number" id="tache">
+                    </div>
+                
+                    <div>
+                        <label for="sommeIndiv">Somme individuelle max/jour</label>
+                        <input type="number" id="sommeIndiv">
+                    </div>
+                
+                    <div>
+                        <label for="sommeTotale">Somme Totale max/jour</label>
+                        <input type="number" id="sommeTotale">
+                    </div>
+                    <div>
+                        <button type="submit" id="enregistrer">Enregistrer</button>
+                    </div>
+                
+                </form>
+          
             </div>
-        </div> -->
-        <div class="table">
-            
+            <div class="rigth">
+                <div>
+                    <button class="" style="color:blue">Admin</button>
+                </div>
+                <div>
+                    <button id="modifierAcces" style="background-color: yellow;">Modifier mon accès</button>
+                </div>
+                <div>
+                    <button class=""></button>
+                </div>
+            </div>
+            <p></p>
+            <div class="G-form">
+                <form class="formAdmin">
+                    <div>
+                        <label for="admin">Nom d'utilisateur</label>
+                        <input type="text" id="admin" required>
+                    </div>
+                    <div>
+                        <label for="password">Mot de pass</label>
+                        <input type="password" id="password" required>
+                    </div>
+                    
+                        <button type="submit" id="submitAdmin">Enregistrer</button>
+                   
+                </form>
+                <p class="title"></p>
+            </div>
+            <!-- <div class="showAdmin">
+                <div>
+                    <img src="">
+                    <span>Yves </span>
+                    <input type="password">
+                </div>
+            </div> -->
+            <div class="table">
+                
+            </div>
         </div>
-    </div>
+    </section>
+   
 
 
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
