@@ -3,10 +3,10 @@ const admin = document.querySelector(".admin");
 
 const session = JSON.parse(localStorage.getItem("session"));
 
-if(session){
-    const som = session.some((el)=>el)
-    if()
-}
+// if(session){
+//     const som = session.some((el)=>el)
+//     if()
+// }
 
 
 
