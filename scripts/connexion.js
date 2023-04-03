@@ -4,10 +4,11 @@ const form  = document.querySelector("form");
 
 function getAdmins(){
     const tab = localStorage.getItem("admins");
+    
    
     
     console.log(tab)
-    if(tab != null || tab?.length !=0){
+    if(tab !== null && tab?.length !==0){
         console.log("ahiiiii")
         return JSON.parse(localStorage.getItem("admins"));
         
