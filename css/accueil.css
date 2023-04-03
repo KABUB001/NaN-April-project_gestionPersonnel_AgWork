@@ -89,14 +89,14 @@ p{
 .second_col div{
     width: 20rem;
     height: 8rem;
-    font-size: 7.5rem;
-    text-align:center;
-    
-    
+    text-align:center;  
 }
 .admin{
     background-color: #ff00009d;
 }
 .travailleur{
     background-color: rgba(128, 128, 128, 0.615);
+}
+.admin,.travailleur{
+    font-size: 7.5rem;
 }

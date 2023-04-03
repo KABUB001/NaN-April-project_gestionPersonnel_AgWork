@@ -23,8 +23,8 @@ function getTable(nom){
 
 const tableAdmins = getTable("admins");
 const tableWorker = getTable("worker");
-travailleur.textContent = tableAdmins.length;
+travailleur.textContent = tableWorker.length;
 travailleur.style.textAlign = "center";
 
 
-admin.textContent = tableWorker.length
+admin.textContent = tableAdmins.length
