@@ -11,10 +11,58 @@ height: 74px;
 width: 150px;
 
 }
+body{
+    width: 1024px;
+}
 header p{
+    
+}
+.first{
+    font-size: 36px;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+.first img{
+    float: left;
+    width: 22.3rem;
+    height: 20rem
+}
+.faq p{
+    font-size:28px;
+}
+.faq{
+    clear:both;
+}
+.img-app{
+    display: flex;
+    justify-content: space-around;
+}
+.img-app img{
+    height: 10%;
+    width: 10%;
     
 }
 
 
+
+
+.form p{
+    font-size: 30px;
+    width: 50%;
+    margin: 0 auto;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width:50%;
+}
+
+form input{
+    height: 42px;
+}
+form textarea{
+    height: 197px;
+}
 
 
